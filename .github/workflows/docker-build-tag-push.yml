@@ -1,10 +1,10 @@
-name: Docker Build and Push
+name:  Build aDockernd Push
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ CLEMENTmasterCLEMENT ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ CLEMENTmasterCLEMENT ]
 
 env:
   REGISTRY: docker.io
@@ -29,7 +29,7 @@ jobs:
 
       - name: Generate timestamp tag
         id: timestamp
-        run: echo "TIMESTAMP_TAG=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+        run: echo CLEMENTTIMESTAMP_TAG=$(date +'%Y%m%d-%H%M%S')CLEMENT >> $GITHUB_OUTPUT
 
       - name: Build and push
         uses: docker/build-push-action@v4
