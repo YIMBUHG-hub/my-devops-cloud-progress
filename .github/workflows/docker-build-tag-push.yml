@@ -8,7 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: Yimbuh
+  IMAGE_NAME: yimbuh1
   DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
 
 jobs:
@@ -55,7 +55,7 @@ jobs:
 
       # - name: Pull and run
       #   run: |
-      #     docker stop Yimbuh || true
-      #     docker rm Yimbuh || true
+      #     docker stop yimbuh1 || true
+      #     docker rm yimbuh1 || true
       #     docker pull ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
-      #     docker run -d -p 8000:80 --name Yimbuh ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+      #     docker run -d -p 8000:80 --name yimbuh1 ${{ env.REGISTRY }}/${{ secrets.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
